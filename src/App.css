@@ -1,38 +1,74 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page {
+  width: 100vw;
+  border: 1px solid orange;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  width: 100%;
+  border: 1px solid lightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar input {
+  width: 100%;
+  border: 1px solid green;
+  height: 5vh;
+}
+
+.list {
+  border: 1px solid purple;
+}
+
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid red;
+}
+
+img {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0px 50px;
+  height: 15vh;
+}
+
+.list-item h4 {
+  color: grey;
+}
+
+/* EmployeePage */
+
+.employee-page{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.name{
+  display: flex;
+  width: 50%;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 2px solid grey;
 }
 
-.App-link {
-  color: #61dafb;
+.contact{
+  width: 50%;
+  border: 2px solid grey;
+}
+.contact h2{
+  margin-left: 10px;
+  text-align: left;
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact h1 {
+  margin-left: 10px;
+  text-align: left;
 }
